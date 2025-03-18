@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 # --- Load CSS ---
-with open("style.css") :
+with open("style.css", "r") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # --- App Title ---
